@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0e0722;
+    margin: 0;
+}
+
+.stopwatch-container{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.671);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(98, 171, 255, 0.404);
+}
+
+#display{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled{
+    background-color: #ccc;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+#startPauseBtn{
+    background-color: #00b31ec7;
+}
+
+#startPauseBtn:hover:not(:disabled) {
+    background-color: #00dd25;
+}
+
+#resetBtn{
+    background-color: #a10a04e0;
+}
+
+#resetBtn:disabled{
+    background-color: #8b191981;   
+}
+
+#resetBtn:hover:not(:disabled) {
+background-color: #ff1d1d;
+}
+
+#lapBtn{
+    background-color: #018ee0b2;
+}
+
+#lapBtn:hover:not(:disabled){
+    background-color: #0080ca;
+}
+
+#laps{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#laps li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
